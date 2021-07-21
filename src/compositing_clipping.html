@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
+    <script type="text/javascript" src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script type="text/javascript" src="https://threejs.org/examples/js/controls/FirstPersonControls.js"></script>
+    <title>Mrf</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+        <a href="project.html"><button class="button">GO BACK</button></a>
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <script src="script.js"></script>
+    <script src="lib/transformasi_matriks.js"></script>
+    <script>
+        var myCanvas = document.getElementById("myCanvas");
+        myCanvas.width = 500;
+        myCanvas.height = 500;
+        var ctx = myCanvas.getContext('2d');
+        var myImageData = ctx.getImageData(0, 0, myCanvas.width, myCanvas.height);
+
+        /* Clipping */
+        // Menentukan posisi
+        var x = myCanvas.width / 2;
+        var y = myCanvas.height / 2;
+        var radius = 75;
+        var offset = 50;
+
+        // Hidung & Mulut
+
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.arc(210, 185, 8, 0, Math.PI / 1)
+        ctx.stroke()
+
+
+
+        ctx.beginPath();
+        ctx.arc(194, 185, 8, 0, Math.PI / 1)
+        ctx.stroke()
+
+        ctx.globalCompositeOperation = "destination-over";
+
+
+        // Mata Kiri
+        ctx.beginPath();
+        ctx.arc(165, 150, 10, 0, 2 * Math.PI, false);
+        ctx.stroke()
+        ctx.fillStyle = "#8B4513"
+        ctx.fill()
+
+        // Mata kanan
+        ctx.beginPath();
+        ctx.arc(230, 150, 10, 0, 2 * Math.PI, false);
+        ctx.stroke()
+        ctx.fillStyle = "#8B4513"
+        ctx.fill()
+        ctx.globalCompositeOperation = "destination-over";
+
+        //Kepala
+        ctx.beginPath();
+        ctx.ellipse(200, 150, 75, 85, Math.PI / 2, 0, 2 * Math.PI);
+        ctx.lineWidth = 9;
+        ctx.strokeStyle = "#8B4513"
+        ctx.fill()
+        ctx.stroke()
+
+        //kuping kanan
+        ctx.beginPath();
+        ctx.moveTo(230, 84)
+        ctx.quadraticCurveTo(285, 30, 271, 110);
+        ctx.fillStyle = "black"
+        ctx.fill()
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "#8B4513"
+        ctx.stroke()
+
+        //kuping kiri
+        ctx.beginPath();
+        ctx.moveTo(170, 83)
+        ctx.quadraticCurveTo(70, 50, 120, 120);
+        ctx.fillStyle = "black"
+        ctx.fill()
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = "#8B4513"
+        ctx.stroke()
+
+        ctx.globalCompositeOperation = "source-over";
+    </script>
+</body>
+
+</html>

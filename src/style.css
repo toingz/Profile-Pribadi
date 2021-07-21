@@ -1,0 +1,420 @@
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+/* header styling */
+
+.navbar ul {
+  top: 50%;
+  left: 50%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transform: translate(-50%);
+  font-family: Helvetica Neue, Helvetica, and Arial;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.navbar li a:hover:not(.active) {
+  color: rgb(78, 78, 78);
+}
+
+.active {
+  color: #dbd8e3 !important;
+}
+
+.header {
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  background: #2a2438;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif;
+}
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header a:hover {
+  color: black;
+}
+
+.header a.active {
+  color: rgb(163, 162, 162);
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+/* section one styling */
+
+.section_one {
+  padding: 500px 0;
+  width: 100%;
+  background-image: url(images/white-tree.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* section two styling */
+
+.section_two {
+  padding: 250px 0;
+  width: 100%;
+  background: #dbd8e3;
+  overflow: auto;
+}
+.section_two .jumbotron {
+  margin: auto;
+  width: 50%;
+}
+.section_two .jumbotron h1,
+.section_two p {
+  text-align: center;
+}
+
+/* section three styling */
+
+.section_three {
+  padding: 250px 0;
+  width: 100%;
+  background: #352f44;
+  overflow: auto;
+}
+.section_three_left {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/eating_banana.jpg) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.section_three_right {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* section four styling */
+
+.section_four {
+  padding: 250px 0;
+  width: 100%;
+  background: #352f44;
+  overflow: auto;
+}
+.section_four_left {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/eating_banana.jpg) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.section_four_left_profile {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/profile.jpg) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.section_four_right {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* section five styling */
+
+.section_five {
+  padding: 250px 0;
+  width: 100%;
+  background: #5c5470;
+  overflow: auto;
+}
+.section_five_left {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/pyramid.png) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.section_five_right {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* Simple cool canon with Javascript */
+
+.section_three_canon {
+  padding: 250px 0;
+  width: 100%;
+  background: #5c5470;
+  overflow: auto;
+}
+.section_three_left_canon {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/canon.png) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.section_three_right_canon {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* Simple Logo with Javascript */
+
+.section_four_logo {
+  padding: 250px 0;
+  width: 100%;
+  background: #352f44;
+  overflow: auto;
+}
+.section_four_left_logo {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/mrf_logo.png) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.section_four_right_logo {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* Cute Bear with Javascript*/
+
+.section_five_bear {
+  padding: 250px 0;
+  width: 100%;
+  background: #5c5470;
+  overflow: auto;
+}
+
+.section_five_left_bear {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/cute_bear.png) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.section_three_bear {
+  padding: 250px 0;
+  width: 100%;
+  background: #5c5470;
+  overflow: auto;
+}
+.section_three_right_bear {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* Big R Logo Layangan with javacript */
+
+.section_four_layangan {
+  padding: 250px 0;
+  width: 100%;
+  background: #352f44;
+  overflow: auto;
+}
+.section_four_left_layangan {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/r_logo.png) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.section_four_right_layangan {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* Cube Rotation with Javacript */
+
+.section_five_cube {
+  padding: 250px 0;
+  width: 100%;
+  background: #5c5470;
+  overflow: auto;
+}
+.section_five_left_cube {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/cube_rotation.png) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.section_three_right_cube {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* Bounce with javascript */
+
+.section_four_bounce {
+  padding: 250px 0;
+  width: 100%;
+  background: #352f44;
+  overflow: auto;
+}
+.section_four_left_bounce {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/bounce.png) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+.section_four_right_bounce {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* Horizontal Pyramid with Javacript */
+
+.section_five_pyramid {
+  padding: 250px 0;
+  width: 100%;
+  background: #5c5470;
+  overflow: auto;
+}
+.section_five_left_pyramid {
+  margin-left: 10%;
+  float: left;
+  padding: 100px 0;
+  width: 40%;
+  background: url(images/pyramid.png) 50% no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.section_three_right_pyramid {
+  float: left;
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+/* read more button */
+
+.button_style .button {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button_style .button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* footer */
+
+.footer {
+  padding: 100px 0;
+  width: 100%;
+  background: #2a2438;
+  text-align: center;
+}
+.footer .button {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.footer .button:hover {
+  background-color: black;
+  color: white;
+}
